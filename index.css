@@ -1,0 +1,19 @@
+.hidden {
+  display: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.error-message {
+    color: red;
+}
