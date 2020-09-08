@@ -30,13 +30,11 @@ function displayResults(responseJson) {
 function getStateParks(query, maxResults=10) {
   const params = {
     api_key: apiKey,
-    q: query,
+    stateCode: query,
     limit: maxResults
   };
   const queryString = formatQueryParams(params)
   const url = searchURL + '?' + queryString;
-
-  console.log(url);
 
   fetch(url)
     .then(response => {
